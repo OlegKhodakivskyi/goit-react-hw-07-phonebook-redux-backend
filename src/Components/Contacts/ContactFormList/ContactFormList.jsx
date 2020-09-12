@@ -1,11 +1,11 @@
 import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { connect } from "react-redux";
-import phoneBookActions from "../../../redux/phoneBookActions/phoneBookActions";
+import phoneBookOperations from "../../../redux/phoneBookActions/phonebookOperations";
 import ContactFormListItem from "./ContactFormListItem/ContactFormListItem";
 import styles from "./ContactList.module.css";
 
-const ContactFormList = ({ contacts, onRemoveContact }) => (
+const ContactFormList = ({ contacts, onRemoveContacts }) => (
   <>
     <TransitionGroup component="ul" className={styles.contactList}>
       {contacts.map(({ id, name, number }) => (
@@ -19,7 +19,7 @@ const ContactFormList = ({ contacts, onRemoveContact }) => (
             key={id}
             name={name}
             number={number}
-            onRemove={() => onRemoveContact(id)}
+            onRemove={() => onRemoveContacts(id)}
           />
         </CSSTransition>
       ))}
@@ -40,7 +40,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-  onRemoveContact: phoneBookActions.deleteContact,
+  onRemoveContacts: phoneBookOperations.onRemoveContacts,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactFormList);

@@ -1,18 +1,18 @@
 import phoneBookActionsTypes from "./phoneBookActionTypes";
 
-const addContact = (contacts) => ({
-  type: phoneBookActionsTypes.ADD,
-  payload: {
-    contacts,
-  },
-});
+// const addContact = (contacts) => ({
+//   type: phoneBookActionsTypes.ADD,
+//   payload: {
+//     contacts,
+//   },
+// });
 
-const deleteContact = (id) => ({
-  type: phoneBookActionsTypes.DEL,
-  payload: {
-    id,
-  },
-});
+// const deleteContact = (id) => ({
+//   type: phoneBookActionsTypes.DEL,
+//   payload: {
+//     id,
+//   },
+// });
 
 const filter = (filter) => {
   // console.log(filter);
@@ -51,12 +51,62 @@ const addContactError = (error) => {
   };
 };
 
+const fetchContactRequest = () => {
+  return {
+    type: phoneBookActionsTypes.FETCH_CONTACT_REQUEST,
+  };
+};
+
+const fetchContactSuccess = (contacts) => {
+  return {
+    type: phoneBookActionsTypes.FETCH_CONTACT_SUCCESS,
+    payload: contacts,
+  };
+};
+
+const fetchContactError = (error) => {
+  return {
+    type: phoneBookActionsTypes.FETCH_CONTACT_ERROR,
+    payload: { error },
+  };
+};
+
+const removeContactRequest = () => {
+  return {
+    type: phoneBookActionsTypes.DEL_CONTACT_REQUEST,
+  };
+};
+
+const removeContactSuccess = (id) => {
+  // console.log(id);
+  return {
+    type: phoneBookActionsTypes.DEL_CONTACT_SUCCESS,
+    payload: id,
+  };
+};
+
+const removeContactError = (error) => {
+  return {
+    type: phoneBookActionsTypes.DEL_CONTACT_ERROR,
+    payload: { error },
+  };
+};
+
 export default {
-  addContact,
-  deleteContact,
+  // addContact,
+  // deleteContact,
   filter,
   duplicate,
+
   addContactRequest,
   addContactSuccess,
   addContactError,
+
+  fetchContactRequest,
+  fetchContactSuccess,
+  fetchContactError,
+
+  removeContactError,
+  removeContactSuccess,
+  removeContactRequest,
 };
