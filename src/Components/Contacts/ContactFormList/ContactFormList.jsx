@@ -1,7 +1,7 @@
 import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { connect } from "react-redux";
-import phoneBookOperations from "../../../redux/phoneBookActions/phonebookOperations";
+import phoneBookOperations from "../../../redux/phoneBookActions/phoneBookOperations";
 import ContactFormListItem from "./ContactFormListItem/ContactFormListItem";
 import styles from "./ContactList.module.css";
 

@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 import phoneBookActionsTypes from "./phoneBookActionTypes";
 
 const items = (state = [], { type, payload }) => {
-  console.log(payload);
+  // console.log(payload);
   switch (type) {
     case phoneBookActionsTypes.ADD_CONTACT_SUCCESS:
       return [...state, payload];

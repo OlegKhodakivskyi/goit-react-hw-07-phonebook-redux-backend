@@ -1,18 +1,24 @@
 import React, { Component } from "react";
 import { CSSTransition } from "react-transition-group";
 import { connect } from "react-redux";
+import phoneBookOperations from "../redux/phoneBookActions/phoneBookOperations";
 import ContactForm from "./Contacts/ContactForm";
 import ContactFormList from "./Contacts/ContactFormList/ContactFormList";
 import Filter from "./Filter/Filter";
+import phoneBookSelectors from "../redux/phoneBookActions/phoneBookSelectors";
 import styles from "./App.module.css";
-import Alert from "./Alert/Alert";
 import stylesAlert from "./Alert/Alert.module.css";
+import Alert from "./Alert/Alert";
 
 class App extends Component {
+  componentDidMount() {
+    this.props.onFetchContacts();
+  }
   render() {
-    const { alert } = this.props;
+    const { alert, loading } = this.props;
     return (
       <>
+        {loading && <h2>LOADING ...</h2>}
         {/* ----------- ALert ----- */}
         {alert && (
           <CSSTransition
@@ -50,10 +56,15 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state.contacts.alertSwitch);
+  // console.log(state.contacts.alertSwitch);
   return {
     alert: state.contacts.alertSwitch,
+    loading: phoneBookSelectors.getLoading(state),
   };
 };
 
-export default connect(mapStateToProps)(App);
+const mapDispatchToProps = {
+  onFetchContacts: phoneBookOperations.fetchContacts,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
