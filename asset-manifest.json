@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/static/css/main.7d61efd2.chunk.css",
-    "main.js": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/static/js/main.1b0aa6eb.chunk.js",
-    "main.js.map": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/static/js/main.1b0aa6eb.chunk.js.map",
-    "runtime-main.js": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/static/js/runtime-main.7a0849e3.js",
-    "runtime-main.js.map": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/static/js/runtime-main.7a0849e3.js.map",
-    "static/js/2.0366e98f.chunk.js": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/static/js/2.0366e98f.chunk.js",
-    "static/js/2.0366e98f.chunk.js.map": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/static/js/2.0366e98f.chunk.js.map",
-    "index.html": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/index.html",
-    "precache-manifest.8ccc6aa623a5d465cf48763c7c6b12b3.js": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/precache-manifest.8ccc6aa623a5d465cf48763c7c6b12b3.js",
-    "service-worker.js": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/service-worker.js",
-    "static/css/main.7d61efd2.chunk.css.map": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/static/css/main.7d61efd2.chunk.css.map",
-    "static/js/2.0366e98f.chunk.js.LICENSE.txt": "/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend/static/js/2.0366e98f.chunk.js.LICENSE.txt"
+    "main.css": "/goit-react-hw-07-phonebook-redux-backend/static/css/main.7d61efd2.chunk.css",
+    "main.js": "/goit-react-hw-07-phonebook-redux-backend/static/js/main.1b0aa6eb.chunk.js",
+    "main.js.map": "/goit-react-hw-07-phonebook-redux-backend/static/js/main.1b0aa6eb.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-07-phonebook-redux-backend/static/js/runtime-main.3e7a4809.js",
+    "runtime-main.js.map": "/goit-react-hw-07-phonebook-redux-backend/static/js/runtime-main.3e7a4809.js.map",
+    "static/js/2.0366e98f.chunk.js": "/goit-react-hw-07-phonebook-redux-backend/static/js/2.0366e98f.chunk.js",
+    "static/js/2.0366e98f.chunk.js.map": "/goit-react-hw-07-phonebook-redux-backend/static/js/2.0366e98f.chunk.js.map",
+    "index.html": "/goit-react-hw-07-phonebook-redux-backend/index.html",
+    "precache-manifest.d7c88b36e543cb857db4d0b5c9876ee2.js": "/goit-react-hw-07-phonebook-redux-backend/precache-manifest.d7c88b36e543cb857db4d0b5c9876ee2.js",
+    "service-worker.js": "/goit-react-hw-07-phonebook-redux-backend/service-worker.js",
+    "static/css/main.7d61efd2.chunk.css.map": "/goit-react-hw-07-phonebook-redux-backend/static/css/main.7d61efd2.chunk.css.map",
+    "static/js/2.0366e98f.chunk.js.LICENSE.txt": "/goit-react-hw-07-phonebook-redux-backend/static/js/2.0366e98f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7a0849e3.js",
+    "static/js/runtime-main.3e7a4809.js",
     "static/js/2.0366e98f.chunk.js",
     "static/css/main.7d61efd2.chunk.css",
     "static/js/main.1b0aa6eb.chunk.js"
