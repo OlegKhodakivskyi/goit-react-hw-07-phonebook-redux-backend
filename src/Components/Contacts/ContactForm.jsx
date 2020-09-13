@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import phoneBookOperations from "../../redux/phoneBookActions/phoneBookOperations";
 import phoneBookActions from "../../redux/phoneBookActions/phoneBookActions";
+import phoneBookSelectors from "../../redux/phoneBookActions/phoneBookSelectors";
 class ContactForm extends Component {
   state = {
     name: "",
@@ -69,8 +70,10 @@ class ContactForm extends Component {
 }
 
 const mapStateToProps = (state) => {
+    // console.log(state, "stateFOrm");
+
   return {
-    contacts: state.contacts.items,
+    contacts: phoneBookSelectors.getContacts(state)
   };
 };
 

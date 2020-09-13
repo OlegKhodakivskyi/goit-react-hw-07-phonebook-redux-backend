@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import phoneBookOperations from "../../../redux/phoneBookActions/phoneBookOperations";
 import ContactFormListItem from "./ContactFormListItem/ContactFormListItem";
 import styles from "./ContactList.module.css";
+import phoneBookSelectors from "../../../redux/phoneBookActions/phoneBookSelectors";
 
 const ContactFormList = ({ contacts, onRemoveContacts }) => (
   <>
@@ -28,14 +29,10 @@ const ContactFormList = ({ contacts, onRemoveContacts }) => (
 );
 
 const mapStateToProps = (state) => {
+  // console.log(state, "stateList");
   return {
-    contacts: state.contacts.filter
-      ? state.contacts.items.filter((contact) =>
-          contact.name
-            .toLowerCase()
-            .includes(state.contacts.filter.toLowerCase())
-        )
-      : state.contacts.items,
+    items: phoneBookSelectors.getContacts(state),
+    contacts: phoneBookSelectors.getFilteredContacts(state),
   };
 };
 

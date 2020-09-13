@@ -2,7 +2,7 @@
   "name": "goit-react-hw-07-phonebook-redux-backend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/OlegKhodakivskyi/goit-react-hw-07-phonebook-redux-backend",
+  "homepage": "https://OlegKhodakivskyi.github.io/goit-react-hw-07-phonebook-redux-backend",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
