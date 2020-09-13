@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import phoneBookOperations from "../../redux/phoneBookActions/phoneBookOperations";
-
+import phoneBookActions from "../../redux/phoneBookActions/phoneBookActions";
 class ContactForm extends Component {
   state = {
     name: "",
@@ -76,6 +76,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
   onAddContact: phoneBookOperations.onAddContact,
+  onAlert: phoneBookActions.duplicate,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);

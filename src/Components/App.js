@@ -58,7 +58,7 @@ class App extends Component {
 const mapStateToProps = (state) => {
   // console.log(state.contacts.alertSwitch);
   return {
-    alert: state.contacts.alertSwitch,
+    alert: phoneBookSelectors.getAlert(state),
     loading: phoneBookSelectors.getLoading(state),
   };
 };
